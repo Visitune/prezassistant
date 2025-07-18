@@ -2,18 +2,18 @@ openapi: 3.1.0
 info:
   title: PREZAssistant Plugin
   version: 1.0.0
-  description: Fournit les règles, templates et exemples de présentations HTML 16:9 au format PowerPoint.
+  description: Fournit les règles, templates et exemples de présentations HTML 16:9.
 servers:
   - url: https://visitune.github.io/prezassistant
-    description: GitHub Pages - PREZAssistant plugin base path
+    description: GitHub Pages base URL for static JSON
 paths:
   /data/instructions.json:
     get:
       operationId: getInstructions
-      summary: Règles de design PREZAssistant
+      summary: Récupère les instructions de design PREZAssistant
       responses:
         '200':
-          description: JSON des contraintes de structure et design
+          description: Données JSON de structure et contraintes
           content:
             application/json:
               schema:
@@ -22,7 +22,7 @@ paths:
   /data/templates.json:
     get:
       operationId: getTemplates
-      summary: Templates de slides standardisés
+      summary: Récupère les modèles de slides PREZAssistant
       responses:
         '200':
           description: Liste de templates de slides
@@ -36,14 +36,15 @@ paths:
   /data/examples.json:
     get:
       operationId: getExamples
-      summary: Exemples complets de présentations
+      summary: Récupère des exemples complets de présentations
       responses:
         '200':
-          description: Exemples complets de présentations générées
+          description: Présentations HTML complètes (structurées)
           content:
             application/json:
               schema:
                 type: array
                 items:
                   type: object
+
 
