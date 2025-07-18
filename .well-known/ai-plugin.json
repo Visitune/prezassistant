@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://raw.githubusercontent.com/ton-org/prezassistant/main/openapi.yaml",
+    "url": "https://raw.githubusercontent.com/Visitune/prezassistant/main/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "https://raw.githubusercontent.com/ton-org/prezassistant/main/assets/logo.png",
+  "logo_url": "https://raw.githubusercontent.com/Visitune/prezassistant/main/assets/logo.png",
   "contact_email": "support@prezassistant.local",
-  "legal_info_url": "https://raw.githubusercontent.com/ton-org/prezassistant/main/legal.md"
+  "legal_info_url": "https://raw.githubusercontent.com/Visitune/prezassistant/main/legal.md"
 }
