@@ -1,27 +1,70 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "PREZAssistant",
+    "title": "PREZAssistant Plugin",
     "version": "1.0.0",
-    "description": "Accès aux templates et règles PREZAssistant"
+    "description": "Fournit les règles, templates et exemples de présentations HTML 16:9."
   },
   "servers": [
     {
-      "url": "https://raw.githubusercontent.com/Visitune/prezassistant/main"
+      "url": "https://raw.githubusercontent.com/Visitune/prezassistant/main",
+      "description": "GitHub Raw files"
     }
   ],
   "paths": {
     "/data/instructions.json": {
       "get": {
         "operationId": "getInstructions",
-        "summary": "Règles de design",
+        "summary": "Récupère les instructions de design PREZAssistant",
         "responses": {
           "200": {
-            "description": "Règles JSON",
+            "description": "Contenu brut des instructions PREZAssistant",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/templates.json": {
+      "get": {
+        "operationId": "getTemplates",
+        "summary": "Récupère les templates de slides",
+        "responses": {
+          "200": {
+            "description": "Exemples de slides structurés",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/examples.json": {
+      "get": {
+        "operationId": "getExamples",
+        "summary": "Récupère des présentations complètes d'exemple",
+        "responses": {
+          "200": {
+            "description": "Exemples complets de présentations HTML",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
                 }
               }
             }
