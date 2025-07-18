@@ -5,7 +5,7 @@ info:
   description: Fournit les règles, templates et exemples de présentations HTML 16:9.
 servers:
   - url: https://visitune.github.io/prezassistant
-    description: GitHub Pages base URL for static JSON
+    description: GitHub Pages - base URL pour l’API statique
 paths:
   /data/instructions.json:
     get:
@@ -13,7 +13,7 @@ paths:
       summary: Récupère les instructions de design PREZAssistant
       responses:
         '200':
-          description: Données JSON de structure et contraintes
+          description: Contraintes de design et de structure (JSON)
           content:
             application/json:
               schema:
@@ -25,7 +25,7 @@ paths:
       summary: Récupère les modèles de slides PREZAssistant
       responses:
         '200':
-          description: Liste de templates de slides
+          description: Liste JSON de templates
           content:
             application/json:
               schema:
@@ -39,12 +39,11 @@ paths:
       summary: Récupère des exemples complets de présentations
       responses:
         '200':
-          description: Présentations HTML complètes (structurées)
+          description: Présentations HTML complètes structurées
           content:
             application/json:
               schema:
                 type: array
                 items:
                   type: object
-
 
