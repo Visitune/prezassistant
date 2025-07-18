@@ -1,0 +1,75 @@
+[
+  {
+    "slideId": "slide-1",
+    "type": "title",
+    "layout": "grid 3/6/3",
+    "title": "Étiquetage & Allégations Alimentaires",
+    "subtitle": "Conformité Réglementaire 2025",
+    "visual": {
+      "type": "photo",
+      "description": "Photo industrielle ou laboratoire"
+    },
+    "animations": ["animate-up", "animate-scale"]
+  },
+  {
+    "slideId": "slide-2",
+    "type": "réglementaire",
+    "layout": "grid 4/4/4",
+    "title": "Cadre Réglementaire Européen",
+    "cards": [
+      {
+        "title": "INCO 1169/2011",
+        "icon": "ico_inco.svg",
+        "points": [
+          "Mentions obligatoires",
+          "Lisibilité renforcée",
+          "Allergènes visibles",
+          "Langue réglementaire"
+        ]
+      },
+      {
+        "title": "CE 1924/2006",
+        "icon": "ico_claim.svg",
+        "points": [
+          "Contrôle des allégations",
+          "Mentions de santé",
+          "Mentions nutritionnelles",
+          "Conformité DGCCRF"
+        ]
+      },
+      {
+        "title": "UE 432/2012",
+        "icon": "ico_ue.svg",
+        "points": [
+          "Liste d'allégations autorisées",
+          "Preuves scientifiques requises",
+          "Claims encadrés",
+          "Enregistrement EFSA"
+        ]
+      }
+    ],
+    "metric": "65 000 contrôles DGCCRF en 2024"
+  },
+  {
+    "slideId": "slide-3",
+    "type": "contenu",
+    "layout": "split 6/6",
+    "title": "Informations Obligatoires d'Étiquetage",
+    "left": {
+      "points": [
+        "Dénomination de vente",
+        "Liste des ingrédients",
+        "Allergènes",
+        "Quantité nette",
+        "DLUO/DLC",
+        "Coordonnées du fabricant"
+      ],
+      "icons": ["ico_label.svg", "ico_info.svg"]
+    },
+    "right": {
+      "visualType": "mockup",
+      "description": "Étiquette annotée"
+    },
+    "metric": "34% taux d'anomalie sur mentions d’origine"
+  }
+]
