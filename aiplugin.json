@@ -3,13 +3,13 @@
   "name_for_human": "PREZAssistant",
   "name_for_model": "prezAssistant",
   "description_for_human": "Génère des présentations HTML PowerPoint-like 16:9 ultra-pro.",
-  "description_for_model": "Génère des présentations HTML 16:9 avec animations, grid, glassmorphism. Utilise les instructions JSON.",
+  "description_for_model": "Génère des présentations HTML avec animations, grid, glassmorphism.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "https://visitune.github.io/prezassistant/openapi.json",
+    "url": "https://raw.githubusercontent.com/Visitune/prezassistant/main/openapi.json",
     "is_user_authenticated": false
   },
   "contact_email": "support@prezassistant.local"
