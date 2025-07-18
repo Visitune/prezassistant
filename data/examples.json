@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Audit Qualité Agroalimentaire 2025",
+    "audience": "auditeurs",
+    "slides": 15,
+    "duration": "30min",
+    "structure": [
+      {
+        "title": "Introduction",
+        "mainMessage": "L’audit est un levier de performance, pas un contrôle.",
+        "bulletPoints": [
+          "Objectifs de l'audit",
+          "Méthodologie 2025",
+          "Contexte réglementaire",
+          "Planification proactive",
+          "Acteurs clés"
+        ],
+        "visualType": "photo",
+        "metrics": "92% des entreprises auditées en 2024 ont mis à jour leurs plans HACCP"
+      },
+      {
+        "title": "Non-conformités fréquentes",
+        "mainMessage": "Certaines erreurs reviennent systématiquement.",
+        "bulletPoints": [
+          "Mauvaise traçabilité",
+          "Plan HACCP non actualisé",
+          "Absence de validation nettoyage",
+          "Fiches de contrôle incomplètes",
+          "Étiquetage erroné"
+        ],
+        "visualType": "infographie",
+        "metrics": "Taux de NC critiques : 18% (DGAL)"
+      },
+      {
+        "title": "Plan d’action post-audit",
+        "mainMessage": "Anticiper pour éviter les sanctions.",
+        "bulletPoints": [
+          "Fiche d’écart",
+          "Responsable affecté",
+          "Délais précis",
+          "Suivi numérique",
+          "Capitalisation sur l'amélioration"
+        ],
+        "visualType": "graphique",
+        "metrics": "Taux de correction à J+30 : 74%"
+      }
+    ]
+  },
+  {
+    "title": "Formation Sécurité Alimentaire",
+    "audience": "techniciens",
+    "slides": 10,
+    "duration": "15min",
+    "structure": [
+      {
+        "title": "Bases HACCP",
+        "mainMessage": "Comprendre les fondements avant d'appliquer.",
+        "bulletPoints": [
+          "Définition des dangers",
+          "Analyse de risque",
+          "Mesures préventives",
+          "Points critiques",
+          "Procédures de contrôle"
+        ],
+        "visualType": "icone",
+        "metrics": "90% des contaminations sont évitables"
+      }
+    ]
+  }
+]
