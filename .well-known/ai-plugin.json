@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://raw.githubusercontent.com/Visitune/prezassistant/main/openapi.yaml",
+    "url": "https://visitune.github.io/prezassistant/openapi.yaml",
     "is_user_authenticated": false
   },
   "contact_email": "support@prezassistant.local"
