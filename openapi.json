@@ -1,0 +1,76 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PREZAssistant Plugin",
+    "version": "1.0.0",
+    "description": "Fournit les règles, templates et exemples de présentations HTML 16:9."
+  },
+  "servers": [
+    {
+      "url": "https://visitune.github.io/prezassistant",
+      "description": "GitHub Pages base URL"
+    }
+  ],
+  "paths": {
+    "/data/instructions.json": {
+      "get": {
+        "operationId": "getInstructions",
+        "summary": "Récupère les instructions de design PREZAssistant",
+        "responses": {
+          "200": {
+            "description": "Contraintes de structure et design",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/templates.json": {
+      "get": {
+        "operationId": "getTemplates",
+        "summary": "Récupère les templates de slides",
+        "responses": {
+          "200": {
+            "description": "Templates de slides",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/examples.json": {
+      "get": {
+        "operationId": "getExamples",
+        "summary": "Récupère des exemples de présentations",
+        "responses": {
+          "200": {
+            "description": "Exemples complets",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
