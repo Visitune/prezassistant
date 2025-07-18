@@ -1,0 +1,41 @@
+{
+  "format": "16:9",
+  "dimensions": "1280x720",
+  "grid": "CSS Grid 12 colonnes",
+  "glassmorphism": true,
+  "fonts": ["Inter", "Montserrat"],
+  "animations": ["slideInUp", "fadeInScale"],
+  "requiredPointsPerSlide": 5,
+  "navigation": "barre de progression + clavier",
+  "designSystem": {
+    "variables": {
+      "--primary-blue": "#2E86AB",
+      "--secondary-green": "#059669",
+      "--glass-bg": "rgba(255,255,255,0.1)",
+      "--glass-border": "rgba(255,255,255,0.2)",
+      "--glass-blur": "blur(15px)",
+      "--shadow-xl": "0 20px 25px -5px rgba(0,0,0,0.1)",
+      "--gradient-primary": "linear-gradient(135deg, var(--primary-blue), var(--secondary-green))"
+    },
+    "layoutCSS": ".presentation-container { width: 1280px; height: 720px; background: var(--gradient-primary); display: flex; flex-direction: column; }"
+  },
+  "presentationEngine": {
+    "keyboard": true,
+    "progressBar": true,
+    "transition": "fadeInScale"
+  },
+  "forbidden": [
+    "scroll continu",
+    "flexbox simple sans grid",
+    "couleurs hex directes",
+    "contenu < 5 points",
+    "span 12 basique"
+  ],
+  "requiredFeatures": [
+    "cards glassmorphiques",
+    "animations CSS",
+    "barre de progression",
+    "navigation clavier",
+    "PresentationEngine complet"
+  ]
+}
