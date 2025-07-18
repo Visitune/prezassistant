@@ -4,7 +4,8 @@ info:
   version: 1.0.0
   description: Accès en lecture aux règles de structuration, design et exemples PREZAssistant via GitHub.
 servers:
-  - url: https://raw.githubusercontent.com/ton-org/prezassistant/main
+  - url: https://raw.githubusercontent.com/Visitune/prezassistant/main
+    description: GitHub Raw pour les fichiers JSON PREZAssistant
 paths:
   /data/instructions.json:
     get:
@@ -17,6 +18,7 @@ paths:
             application/json:
               schema:
                 type: object
+
   /data/templates.json:
     get:
       operationId: getTemplates
@@ -30,6 +32,7 @@ paths:
                 type: array
                 items:
                   type: object
+
   /data/examples.json:
     get:
       operationId: getExamples
